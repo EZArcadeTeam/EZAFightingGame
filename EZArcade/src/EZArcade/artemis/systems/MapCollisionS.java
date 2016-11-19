@@ -1,9 +1,9 @@
-package EZArcade.artemis.systems;
+package ezarcade.artemis.systems;
 
-import EZArcade.artemis.DGWorld;
-import EZArcade.artemis.components.PositionC;
-import EZArcade.artemis.components.SpriteC;
-import EZArcade.artemis.components.VelocityC;
+import ezarcade.artemis.DGWorld;
+import ezarcade.artemis.components.PositionC;
+import ezarcade.artemis.components.SpriteC;
+import ezarcade.artemis.components.VelocityC;
 
 import com.artemis.Aspect;
 import com.artemis.ComponentMapper;
@@ -51,22 +51,18 @@ public class MapCollisionS extends IntervalEntityProcessingSystem {
 			velocity.velX = 0;
 		}
 		if(diagonalLeft && (position.y%1f < (1-((position.x+0.5f)%1.0f)))) {
-			velocity.velY=-velocity.velX*1.3f;
-			float newPosition=(float) (Math.ceil(position.y))-((position.x+0.5f)%1f);
-			if((position.x+0.5f)%1f > 0.85f)
-				newPosition=(float) (Math.ceil(position.y-0.1f))-((position.x+0.5f)%1f);
-				//new y is old y converted to int, plus halfway point of sprite's x, modulus 1
-				//presents problem of being called too early.
+			velocity.velY=((-velocity.velX)*1.5f);
+			float newPosition=(float) (Math.floor(position.y)) + (1 - ((position.x+0.5f)%1f) );
+			if((position.x+0.5f)%1f < 0.15f)
+				newPosition=(float) (Math.floor(position.y-0.1f)) + (1 - ((position.x+0.5f)%1f));
 			if(position.y>=newPosition)
 				position.y=newPosition;
 		}
 		else if(diagonalRight && (position.y%1f < (position.x+0.5f)%1f)) {
-			velocity.velY=velocity.velX*1.3f;
+			velocity.velY=velocity.velX*1.5f;
 			float newPosition=(float) (Math.floor(position.y))+((position.x+0.5f)%1f);
 			if((position.x+0.5f)%1f > 0.85f)
 				newPosition=(float) (Math.floor(position.y-0.1f))+((position.x+0.5f)%1f);
-				//new y is old y converted to int, plus halfway point of sprite's x, modulus 1
-				//presents problem of being called too early.
 			if(position.y>=newPosition)
 				position.y=newPosition;
 		}
@@ -83,8 +79,8 @@ public class MapCollisionS extends IntervalEntityProcessingSystem {
 	private boolean collidesLeft(SpriteC sprite, String id) {
 		if(isCellBlocked(sprite.sprite.getX(), sprite.sprite.getY() + 1, id))
 			return true;
-		if(isCellBlocked(sprite.sprite.getX(), sprite.sprite.getY() + 0.4f, id))
-			return true;
+		//if(isCellBlocked(sprite.sprite.getX(), sprite.sprite.getY() + 0.4f, id))
+			//return true;
 		return false;
 	}
 	
@@ -107,16 +103,16 @@ public class MapCollisionS extends IntervalEntityProcessingSystem {
 	private boolean collidesDiagonal(SpriteC sprite, PositionC position, String id) {
 		if(isCellBlocked(sprite.sprite.getX()+0.5f, sprite.sprite.getY(), id))
 			return true;
-		if((position.x+0.5f)%1f > 0.85f)
+		if((position.x+0.5f)%1f > 0.85f || (position.x+0.5f)%1f < 0.15f)
 			if(isCellBlocked(sprite.sprite.getX()+0.5f, sprite.sprite.getY()-0.1f, id))
 				return true;
 		return false;
 	}
 	
 	private boolean collidesTop(SpriteC sprite, String id) {
-		if(isCellBlocked(sprite.sprite.getX()+0.1f, sprite.sprite.getY() + 2, id))
+		if(isCellBlocked(sprite.sprite.getX()+0.1f, sprite.sprite.getY() + 2f, id))
 			return true;
-		if(isCellBlocked(sprite.sprite.getX()+0.9f, sprite.sprite.getY() + 2, id))
+		if(isCellBlocked(sprite.sprite.getX()+0.9f, sprite.sprite.getY() + 2f, id))
 			return true;
 		return false;
 	}

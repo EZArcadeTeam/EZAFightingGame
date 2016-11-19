@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="18" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="CaveSet" tilewidth="16" tileheight="16">
+  <image source="TileSetA.png" width="96" height="80"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="diagonalRight" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="diagonalLeft" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="water" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="lightBlue" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="lightYellow" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="lightGreen" value=""/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="lightBlue" value=""/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="lightRed" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Back" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPhLFgegJ0OwWBWIjObhgFo2AUjIJRMApGwfACALIPAKk=
+  </data>
+ </layer>
+ <layer name="Front" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJzFVVEKwjAMzWAiMlmdOp2Cd/MoHsWj7CgexRQSiGnGGLNp4H3sJeS9Je3WwG88EJWBO+KUAQ2kcZvQbkVNAPjoXsg9Q8q9qD6phQn9C3kYSDsobY6DyHWC70QeDP4ouPh+G6O3V/CMS3mI869xF6U88P6jB8RYSr9XPHpxmYd1/qM27eOdW9/aOz6PHtqsX/L8y++ct4crpN/5HcHLi/WvWTKPc0b9f80j3qc9QfeZ01/rhe/ylqDnukTf8qL91CrH9VK/MvJrMddP6zO+8cwMCA==
+  </data>
+ </layer>
+</map>

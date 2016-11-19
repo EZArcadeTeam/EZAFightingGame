@@ -1,10 +1,10 @@
-package EZArcade.artemis.systems;
+package ezarcade.artemis.systems;
 
 import java.util.HashMap;
 
-import EZArcade.artemis.DGWorld;
-import EZArcade.artemis.components.LightC;
-import EZArcade.artemis.components.PositionC;
+import ezarcade.artemis.DGWorld;
+import ezarcade.artemis.components.LightC;
+import ezarcade.artemis.components.PositionC;
 import box2dLight.Light;
 
 import com.artemis.Aspect;

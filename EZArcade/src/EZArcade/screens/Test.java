@@ -1,4 +1,4 @@
-package EZArcade.screens;
+package ezarcade.screens;
 
 import box2dLight.ConeLight;
 import box2dLight.PointLight;

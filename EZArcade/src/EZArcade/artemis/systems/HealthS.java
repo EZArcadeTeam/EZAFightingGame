@@ -1,6 +1,6 @@
-package EZArcade.artemis.systems;
+package ezarcade.artemis.systems;
 
-import EZArcade.artemis.components.HealthC;
+import ezarcade.artemis.components.HealthC;
 
 import com.artemis.Aspect;
 import com.artemis.ComponentMapper;

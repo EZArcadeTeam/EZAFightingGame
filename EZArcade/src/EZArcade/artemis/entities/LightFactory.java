@@ -1,8 +1,9 @@
-package EZArcade.artemis.entities;
+package ezarcade.artemis.entities;
 
-import EZArcade.artemis.components.LightC;
-import EZArcade.artemis.components.LightCycleC;
-import EZArcade.artemis.components.PositionC;
+import ezarcade.artemis.components.ItemC;
+import ezarcade.artemis.components.LightC;
+import ezarcade.artemis.components.LightCycleC;
+import ezarcade.artemis.components.PositionC;
 import box2dLight.ConeLight;
 import box2dLight.PointLight;
 import box2dLight.RayHandler;
@@ -25,6 +26,8 @@ public class LightFactory {
 		pos.y=y;
 		e.addComponent(pos);
 		
+		e.addComponent(new ItemC());
+		
 		return e;
 	}
 	
@@ -46,6 +49,8 @@ public class LightFactory {
 		pos.y=y;
 		e.addComponent(pos);
 		
+		e.addComponent(new ItemC());
+		
 		return e;
 	}
 	
@@ -55,6 +60,8 @@ public class LightFactory {
 		LightC light = new LightC();
 		light.light = new ConeLight(rayHandler, numRays, color, lightDistance*3, posX, posY, angle, size);
 		e.addComponent(light);
+		
+		e.addComponent(new ItemC());
 		
 		return e;
 	}

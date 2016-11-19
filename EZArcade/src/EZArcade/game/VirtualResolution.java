@@ -1,4 +1,4 @@
-package EZArcade.game;
+package ezarcade.game;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
 

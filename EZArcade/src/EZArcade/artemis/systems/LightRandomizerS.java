@@ -1,7 +1,7 @@
-package EZArcade.artemis.systems;
+package ezarcade.artemis.systems;
 
-import EZArcade.artemis.components.LightC;
-import EZArcade.artemis.components.PositionC;
+import ezarcade.artemis.components.LightC;
+import ezarcade.artemis.components.PositionC;
 
 import com.artemis.Aspect;
 import com.artemis.ComponentMapper;

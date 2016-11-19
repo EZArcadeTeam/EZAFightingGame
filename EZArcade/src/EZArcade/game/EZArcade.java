@@ -1,6 +1,6 @@
-package EZArcade.game;
+package ezarcade.game;
 
-import EZArcade.screens.*;
+import ezarcade.screens.*;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
@@ -12,13 +12,13 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 ////////////////////////////////////////////////////////////
 
 public class EZArcade extends Game {
-	public static final String TITLE="EZArcade";
+	public static final String TITLE="EZA Fighting Game";
 	public static final int WIDTH=1024,HEIGHT=576;
 	public static final int[] fps = new int[]{30,60,120,144};
 
 	@Override
 	public void create() {
-		setScreen(new TestWorld()); //This defines what screen loads first.
+		setScreen(new DeepGroundGame()); //This defines what screen loads first.
 	}
 
 	public static void main (String[] arg) {

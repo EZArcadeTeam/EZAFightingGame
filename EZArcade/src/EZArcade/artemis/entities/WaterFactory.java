@@ -1,6 +1,6 @@
-package EZArcade.artemis.entities;
+package ezarcade.artemis.entities;
 
-import EZArcade.artemis.components.ShaderC;
+import ezarcade.artemis.components.ShaderC;
 
 import com.artemis.Entity;
 import com.artemis.World;

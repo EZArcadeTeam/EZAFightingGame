@@ -1,10 +1,10 @@
-package EZArcade.screens;
+package ezarcade.screens;
 
-import EZArcade.artemis.DGWorld;
-import EZArcade.artemis.entities.LightFactory;
-import EZArcade.artemis.entities.PlayerFactory;
-import EZArcade.artemis.systems.*;
-import EZArcade.game.*;
+import ezarcade.artemis.DGWorld;
+import ezarcade.artemis.entities.LightFactory;
+import ezarcade.artemis.entities.PlayerFactory;
+import ezarcade.artemis.systems.*;
+import ezarcade.game.*;
 
 import com.artemis.managers.GroupManager;
 import com.badlogic.gdx.Gdx;
@@ -36,6 +36,7 @@ public class TestWorld implements Screen {
 		world.setSystem(new TiledS());
 		world.setSystem(new LightCycleS());
 		world.setSystem(new HealthS());
+		world.setSystem(new MapChangeS());
 		world.setSystem(new MapCollisionS());
 		world.setSystem(new MovementS());
 		world.setSystem(new BatchRendererS());

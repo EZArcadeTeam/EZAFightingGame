@@ -1,10 +1,10 @@
-package EZArcade.artemis.entities;
+package ezarcade.artemis.entities;
 
-import EZArcade.artemis.components.HealthC;
-import EZArcade.artemis.components.PlayerC;
-import EZArcade.artemis.components.PositionC;
-import EZArcade.artemis.components.SpriteC;
-import EZArcade.artemis.components.VelocityC;
+import ezarcade.artemis.components.HealthC;
+import ezarcade.artemis.components.PlayerC;
+import ezarcade.artemis.components.PositionC;
+import ezarcade.artemis.components.SpriteC;
+import ezarcade.artemis.components.VelocityC;
 
 import com.artemis.Entity;
 import com.artemis.World;

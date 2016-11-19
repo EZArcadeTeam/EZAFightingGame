@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="18" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="CaveSet" tilewidth="16" tileheight="16">
+  <image source="TileSetA.png" width="96" height="80"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="diagonalRight" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="diagonalLeft" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="lightYellow" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="lightGreen" value=""/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="lightBlue" value=""/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="lightRed" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Back" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DkAcaBdsAoGAWjYBSMggEFAA8IAAI=
+  </data>
+ </layer>
+ <layer name="Front" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJztlFEOwyAIhmniHtrnrVt3uh6tR/FoxUUWZhCocw9LSvLHxgj/p1IBACbUYOjRQU/4jImNmleZ1ysk/xava0f/S2MtKQJqVDQI/hpDWU9ax9dYPVXzrzEsoPdFcHomzRV/5I6td8HrIOu6HNw/8se8j5XxuDmoTvKmOYuB8tBnS9/3PDcyBu9ZMP9IczeDgeeFzFC7R4uhuMc3B46bt/+svtV6X+pjq17me/XdUZUMVIf/I1YN40jP+HFo77P3Hf5G1vvUkvNP2gEb5B+P
+  </data>
+ </layer>
+</map>

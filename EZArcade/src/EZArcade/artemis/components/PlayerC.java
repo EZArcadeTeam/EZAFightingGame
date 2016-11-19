@@ -1,4 +1,4 @@
-package EZArcade.artemis.components;
+package ezarcade.artemis.components;
 
 import com.artemis.Component;
 
@@ -8,5 +8,5 @@ import com.artemis.Component;
 ////////////////////////////////////////////////////////////
 
 public class PlayerC extends Component {
-
+	public boolean abilityFloat = false;
 }

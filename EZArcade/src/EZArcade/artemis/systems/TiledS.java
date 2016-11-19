@@ -1,7 +1,7 @@
-package EZArcade.artemis.systems;
+package ezarcade.artemis.systems;
 
-import EZArcade.artemis.DGWorld;
-import EZArcade.artemis.components.TiledC;
+import ezarcade.artemis.DGWorld;
+import ezarcade.artemis.components.TiledC;
 
 import com.artemis.ComponentMapper;
 import com.artemis.annotations.Mapper;

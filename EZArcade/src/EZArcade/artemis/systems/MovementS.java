@@ -1,7 +1,7 @@
-package EZArcade.artemis.systems;
+package ezarcade.artemis.systems;
 
-import EZArcade.artemis.components.PositionC;
-import EZArcade.artemis.components.VelocityC;
+import ezarcade.artemis.components.PositionC;
+import ezarcade.artemis.components.VelocityC;
 
 import com.artemis.Aspect;
 import com.artemis.ComponentMapper;
@@ -35,9 +35,6 @@ public class MovementS extends IntervalEntityProcessingSystem {
 		
 		position.addX( velocity.velX * (1/60f));
 		position.addY( velocity.velY * (1/60f));
-		
-		if(position.y<0)
-			position.y=0;
 	}
 	
 	@Override

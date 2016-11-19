@@ -1,8 +1,8 @@
-package EZArcade.artemis.systems;
+package ezarcade.artemis.systems;
 
-import EZArcade.artemis.DGWorld;
-import EZArcade.artemis.components.PositionC;
-import EZArcade.artemis.components.SpriteC;
+import ezarcade.artemis.DGWorld;
+import ezarcade.artemis.components.PositionC;
+import ezarcade.artemis.components.SpriteC;
 
 import com.artemis.Aspect;
 import com.artemis.ComponentMapper;

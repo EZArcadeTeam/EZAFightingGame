@@ -1,4 +1,4 @@
-package EZArcade.screens;
+package ezarcade.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;

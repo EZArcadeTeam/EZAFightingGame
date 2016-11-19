@@ -1,4 +1,4 @@
-package EZArcade.artemis.components;
+package ezarcade.artemis.components;
 
 import com.artemis.Component;
 import box2dLight.Light;
